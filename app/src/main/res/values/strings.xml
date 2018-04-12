@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProductsListApp</string>
+    <string name="name">Наименование:</string>
+    <string name="price">Цена в рублях:</string>
+    <string name="count">Количество товара:</string>
+    <string name="choose_action">Выберите действие</string>
+    <string name="edit">Редактировать</string>
+    <string name="delete">Удалить</string>
+    <string name="priceItem">%s руб.</string>
+    <string name="countItem">%s шт.</string>
+    <string name="error_create_product">Описание товара заполнено некорректно. Товар не создан.</string>
+</resources>

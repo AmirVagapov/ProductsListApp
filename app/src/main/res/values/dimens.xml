@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="largeSpace">16dp</dimen>
+    <dimen name="space">8dp</dimen>
+    <dimen name="halfSpace">4dp</dimen>
+    <dimen name="dialogWidth">250dp</dimen>
+    <dimen name="dialogHeight">250dp</dimen>
+    <dimen name="textSizeTitle">16sp</dimen>
+    <dimen name="textSizeSubtitle">14sp</dimen>
+</resources>

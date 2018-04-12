@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F52B5</color>
+    <color name="colorPrimaryDark">#142476</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="cardViewBackground">#455088</color>
+    <color name="fabColor">#FFA441</color>
+    <color name="textSubtitle">#450def</color>
+    <color name="background">#e0e0e0</color>
+    <color name="select">#607d8b</color>
+</resources>
