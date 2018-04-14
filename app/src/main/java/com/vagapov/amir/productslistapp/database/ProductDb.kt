@@ -5,13 +5,10 @@ import org.jetbrains.anko.db.*
 
 class ProductDb(private val productDbHelper: ProductDbHelper = ProductDbHelper.instance) {
 
-
-    fun requestProduct(id: Int): Product = productDbHelper.use {
+    fun requestProduct(id: Int): Product? = productDbHelper.use {
         select(ProductTable.TABLE_NAME)
-                .whereSimple("id = ?", id.toString())
-                .parseSingle(classParser())
+                .whereSimple("id = ?", id.toString()).parseOpt(classParser())
     }
-
 
     fun requestProductList(): List<Product> = productDbHelper.use {
         select(ProductTable.TABLE_NAME).parseList(classParser())
@@ -41,6 +38,7 @@ class ProductDb(private val productDbHelper: ProductDbHelper = ProductDbHelper.i
     fun deleteProduct(id: Int) = productDbHelper.use {
         delete(ProductTable.TABLE_NAME, "id = $id")
     }
+
 
     companion object {
         val database by lazy { ProductDb() }

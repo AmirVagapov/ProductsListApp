@@ -10,7 +10,7 @@ fun FragmentActivity.startFragment(fragment: Fragment) : FragmentTransaction =
         supportFragmentManager.beginTransaction().replace(R.id.container, fragment)
 
 fun String.editString() : String{
-    return when{
+    return when {
         contains(".") -> {
             val arr = split(".")
             String.format("%.2f", "${arr[0]}.${arr[1]}".toFloat())

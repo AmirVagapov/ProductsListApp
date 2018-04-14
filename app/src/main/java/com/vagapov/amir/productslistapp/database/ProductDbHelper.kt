@@ -6,8 +6,8 @@ import com.vagapov.amir.productslistapp.App
 import org.jetbrains.anko.db.*
 
 
-class ProductDbHelper(context: Context = App.instance) :
-        ManagedSQLiteOpenHelper(context, ProductDbHelper.DB_NAME, null, ProductDbHelper.DB_VERSION) {
+class ProductDbHelper(context: Context = App.instance)
+    : ManagedSQLiteOpenHelper(context, ProductDbHelper.DB_NAME, null, ProductDbHelper.DB_VERSION) {
 
 
     override fun onCreate(db: SQLiteDatabase) {

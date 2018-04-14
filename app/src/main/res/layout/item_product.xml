@@ -1,79 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="@dimen/space"
     app:cardBackgroundColor="@color/cardViewBackground"
-    app:cardElevation="@dimen/space"
-    app:cardCornerRadius="@dimen/space">
-
-
+    app:cardCornerRadius="@dimen/space"
+    app:cardElevation="@dimen/space">
 
     <LinearLayout
-        android:background="@drawable/selector"
-        android:padding="@dimen/space"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@drawable/selector"
+        android:orientation="vertical"
+        android:padding="@dimen/space">
 
         <TextView
+            style="@style/TextTitleStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/name"
-            android:textSize="@dimen/textSizeTitle"
-            android:textColor="@android:color/white"/>
+            android:text="@string/name"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/item_name"
-            tools:text="Some Product"
-            android:textSize="@dimen/textSizeSubtitle"
-            android:textColor="@color/background"/>
+            style="@style/TextSubtitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Some Product"/>
 
         <LinearLayout
-            android:layout_margin="@dimen/halfSpace"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/background"/>
+            style="@style/DividerHorizontalStyle"/>
 
         <TextView
+            style="@style/TextTitleStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/price"
-            android:textSize="@dimen/textSizeTitle"
-            android:textColor="@android:color/white"/>
+            android:text="@string/price"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/item_price"
-            tools:text="100.98 руб."
-            android:textSize="@dimen/textSizeSubtitle"
-            android:textColor="@color/background"/>
+            style="@style/TextSubtitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="100.98 руб."/>
+
         <LinearLayout
-            android:layout_margin="@dimen/halfSpace"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/background"/>
+            style="@style/DividerHorizontalStyle"/>
 
         <TextView
+            style="@style/TextTitleStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/count"
-            android:textSize="@dimen/textSizeTitle"
-            android:textColor="@android:color/white"/>
+            android:text="@string/count"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/item_count"
-            tools:text="200 шт."
-            android:textSize="@dimen/textSizeSubtitle"
-            android:textColor="@color/background"/>
+            style="@style/TextSubtitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="200 шт."/>
 
     </LinearLayout>
 

@@ -5,6 +5,7 @@ import com.vagapov.amir.productslistapp.model.Product
 
 
 class NewProductState : EditableProductState {
+
     override fun edit(product: Product) {
         ProductDb.database.insertProduct(product)
     }
